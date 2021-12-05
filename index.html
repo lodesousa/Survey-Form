@@ -1,0 +1,45 @@
+<html>
+  <body>
+    <main class="container">
+      <header>
+      <h1 id="title"> Teacher Survey</h1>
+      <p id= "description"> Thanks for helping us to improve our work as teachers!</p>
+      </header>
+      <form id="survey-form">
+       
+        <label for="text" id="name-label">Name:</label>
+        <input id="name" type="text" class="form-control" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" type="email"class="form-control" placeholder="Enter your email" required>
+        <label for="number" id="number-label">Age:</label>
+        <input id="number" class="form-control" type="number" min="10" max="99" placeholder="Enter your age" required>
+        
+        <label for="grades" id="dropdown-label">What's your grade?</label>
+        <select name="grade" id="dropdown" class="form-control">
+        <option value="9grade" name="9">9th grade - freshman</option>
+        <option value="10grade" name="10">10th grade - sophomore</option>
+        <option value="11grade" name="11">11th grade - junior</option>
+        <option value="12grade" name="12">12th grade - senior</option>
+        </select>
+        <p>Which option best describes your teacher?</p>
+        <label for="opinion1" class="opinion">
+          <input type="radio" name="opinion" id="radio"> She/He is amazing!🥳</label></br>
+        <label for="opinion2" class="opinion">
+          <input type="radio" name="opinion" id="radio"> She/He is very good!😊</label></br>
+        <label for="opinion3" class="opinion">
+          <input type="radio" name="opinion" id="radio"> She/He is ok.😐</label>
+        <p>Check the best qualities of your teacher:</p>
+        <label for=qualities> <input type="checkbox" id="checkbox" name="listener" value="great-option">Great listener</label></br> 
+         <label for=qualities> <input type="checkbox" id="checkbox" name="patient" value="patient-option">Patient</label></br> 
+         <label for=qualities> <input type="checkbox" id="checkbox" name="creative" value="creative-option">Creative</label></br> 
+         <label for=qualities> <input type="checkbox" id="checkbox" name="caring" value="caring-option">Caring</label></br> 
+         <label for=qualities> <input type="checkbox" id="checkbox" name="compassionate" value="compassionate-option">Compassionate</label></br> 
+        </br>
+        <label for="message" class="message">Leave a message to your favorite teacher!</label>
+<textarea id="text-area" name="message" rows="4" cols="50" placeholder="Dear Ms./Mr. ...">
+</textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>      
